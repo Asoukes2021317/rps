@@ -38,6 +38,9 @@ def winner(player):
     print("Congratulations %s, you won the game!!" %(names[player]))
 
 # get some user inputs / main game
+
+print ("Welcome!!!!!!!!!!!!!?")
+
 while len(names[0]) < 2:
     names[0] = input("Player A please enter your first name: ")
 while len(names[1]) < 2:
