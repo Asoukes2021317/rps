@@ -22,19 +22,3 @@ def test_congrats():
 # Winner Testing
 def test_winner():
     assert rps.congrats("Player") == print("Congratulations Player, you won the game!!")
-
-
-# Examples
-
-# @pytest.mark.set1
-# def test_anyNames():
-#     u = uniqueListOfNames(NAMES)
-#     assert len(u) > 0
-
-# @pytest.mark.set1
-# def test_checkUnique():
-#     u = uniqueListOfNames(NAMES)
-#     test = []
-#     for item in u:
-#         assert item not in test
-#         test.append(item)
