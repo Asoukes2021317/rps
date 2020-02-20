@@ -29,8 +29,8 @@ print("------------------------------------------\r\n%s has been randomly chosen
 
 # ---------- main game loop ----------
 while currentRound < rounds+1:
-    startersChoice = rps.weaponChoice(names[starter])
-    secondsChoice = rps.weaponChoice(names[second])
+    startersChoice = rps.weaponChoice(names[starter])[0]
+    secondsChoice = rps.weaponChoice(names[second])[0]
 
     print("------------------------------------------\r\nRound %s Results: %s (%s) vs %s (%s)" %(currentRound, names[0], choices[startersChoice-1], names[1], choices[secondsChoice-1]))
 

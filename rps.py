@@ -2,8 +2,9 @@ import getpass
 
 # game methods
 def weaponChoice(player):
-    choice = int(getpass.getpass("------------------------------------------\r\n%s, please choose your weapon:\r\n1. Rock\r\n2. Paper\r\n3. Scissors\r\nEnter your choice (use the appropriate number): " %(player)))
-    return choice
+    theString = "------------------------------------------\r\n%s, please choose your weapon:\r\n1. Rock\r\n2. Paper\r\n3. Scissors\r\nEnter your choice (use the appropriate number): " %(player)
+    choice = int(getpass.getpass(theString))
+    return choice, theString
 
 def checking(starter, second): # check the result of choices
     diff = starter - second
